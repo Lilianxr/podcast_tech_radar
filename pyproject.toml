@@ -1,0 +1,33 @@
+[project]
+name = "podcast-tech-card-library"
+version = "0.1.0"
+description = "Podcast Tech Card Library using LangGraph"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+
+dependencies = [
+  "langgraph",
+  "langchain-core",
+  "langchain-openai",
+  "python-dotenv",
+  "requests",
+  "beautifulsoup4",
+  "lxml",
+  "pydantic>=2.7",
+  "sqlalchemy>=2.0",
+  "psycopg[binary]>=3.1",
+  "pgvector>=0.2.5",
+  "pyyaml",
+]
+
+[project.scripts]
+tech-radar = "tech_radar.cli:main"
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double"

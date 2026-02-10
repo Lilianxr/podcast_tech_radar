@@ -1,0 +1,4 @@
+Lex Fridman (00:00:05): Today we talk about inference costs and scaling laws.
+Guest (00:00:22): The new model is more efficient on smaller batch sizes.
+Lex Fridman (00:00:45): How does it compare to older baselines?
+Guest (00:01:05): It's roughly 30% cheaper per token and more reliable.
